@@ -1,0 +1,62 @@
+:root {
+    --cream: #F5F1E3;
+    --red: #C63D2F;
+    --dark: #1A1A1A;
+}
+
+body {
+    background-color: var(--cream);
+    margin: 0;
+    font-family: 'serif';
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: var(--dark);
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05));
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 5%;
+}
+
+/* The Food Card */
+.item-card {
+    background: var(--dark);
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.item-card:hover {
+    transform: translateY(-10px);
+}
+
+.item-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* This makes your custom photos fit perfectly */
+}
+
+.item-info {
+    padding: 15px;
+}
+
+.price-tag {
+    color: var(--red);
+    font-weight: bold;
+}
+
